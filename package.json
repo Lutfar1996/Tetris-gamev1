@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "tsc",
-     "start": "node dist/index.js"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src/**/*.ts"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,13 @@
   },
   "homepage": "https://github.com/Lutfar1996/Tetris-gamev1#readme",
   "devDependencies": {
+    "@types/node": "^24.0.7",
+    "@typescript-eslint/eslint-plugin": "^8.35.0",
+    "@typescript-eslint/parser": "^8.35.0",
+    "eslint": "^9.30.0",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.0.0"
   }
 }

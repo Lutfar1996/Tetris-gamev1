@@ -1,5 +1,8 @@
-function greet(name: string): string {
-  return `Hello, ${name}!`;
-}
+import dotenv from "dotenv";
+import { greet } from "./utils/greet";
+import { log } from "./utils/logger";
 
-console.log(greet("Reza"));
+dotenv.config();
+
+const user = process.env.USER_NAME || "Guest";
+log(greet(user));
